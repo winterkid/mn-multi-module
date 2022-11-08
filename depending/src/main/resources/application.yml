@@ -1,0 +1,9 @@
+micronaut:
+  application:
+    name: test-it
+kafka:
+  bootstrap.servers: 127.0.0.1:9092
+  consumers:
+    default:
+      auto.offset.reset: latest
+      isolation.level: read_committed

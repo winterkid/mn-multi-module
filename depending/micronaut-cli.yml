@@ -1,0 +1,6 @@
+applicationType: messaging
+defaultPackage: de.osp_dd.kr1.bi_data_storageorder
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [annotation-api, app-name, graalvm, jackson-databind, java, java-application, junit, kafka, kafka-streams, logback, maven, mockito, readme, shade, testcontainers, yaml]

@@ -1,0 +1,15 @@
+<configuration>
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+            <pattern>{"timestamp":"%date{ISO8601}","class":"%class","status":"%level","logger.name":"%logger","logger.thread_name":"%thread","message":"%msg"},%n</pattern>
+		</encoder>
+	</appender>
+
+	<root level="info">
+		<appender-ref ref="STDOUT" />
+	</root>
+
+	<logger name="org.testcontainers" level="INFO" />
+	<logger name="com.github.dockerjava" level="WARN" />
+</configuration>
